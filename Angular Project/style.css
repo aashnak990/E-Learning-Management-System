@@ -1,0 +1,315 @@
+:root {
+    --heading: #dad6d6;
+    --shadow:#808080;
+    --table-head:#060657;
+    --white:#ffffff;
+    --dark-grey:#505050; 
+    --black:#000000;
+    --red:#FF0000;
+    --caption:#0F0F0F;
+    --button:#f5f5f5;
+    --slider-left:#7fd9e9;
+    --slider-right:#1f8da8;
+    --border:#929292b7;
+    --grey:#d3d3d3;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/* Navigation-Bar */
+.navigation-bar{
+    height: 7rem;
+    box-shadow: 0rem .3rem .2rem var(--shadow);
+    margin-bottom: 0rem!important;
+}
+.nav-link{
+    color: var(--red)!important;
+}
+.nav-option{
+    color: var(--black);
+    padding-top: 2.5rem!important;
+    font-weight: 700;
+}
+a{
+    background-color: transparent!important;
+}
+/* Navigation-Bar */
+
+/* slider */
+.slider-background{
+    background-image: linear-gradient(to right,  var(--slider-left), var(--slider-right) 60%);
+    width: 100%;
+}
+.carousel-arrow{
+    opacity: 0!important;
+}
+.carousel-image{
+    width: 40%;
+    float: right; 
+}
+#slider-caption{
+    text-align: left;
+    margin: 0px 0px 3.8rem -20rem;
+    color:var(--caption);
+    text-shadow: none!important;
+}
+#slider-btn{
+    background-color: var(--button);
+    border-radius: 20rem;
+    color:var(--black);
+    padding: .5rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: none;   
+}
+.sliderHeading{
+    font-size: 2.9rem;    
+}
+.sliderHeading2{
+    font-size: 2rem;
+    font-weight: small;
+}
+hr{
+    margin-top: 0!important;
+}
+/* slider */
+
+/* card */
+.card-image{
+    width: 100%;
+    height: 12rem;
+}
+.cardHeading{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.cards{
+    box-shadow: 0 0 .3rem .3rem var(--shadow);
+    margin: 4rem;
+    width: 28rem;
+    font-size: 1.5rem!important;
+    font-weight: 500;
+    line-height: 1.7rem;
+    display: inline-block!important;
+    padding-bottom: 1rem;
+    padding-left: .5rem;
+    padding-right: .3rem;
+    margin-top: 2rm;
+}
+#training-header{
+    font-weight:bold;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-bottom: 0rem;
+    margin-bottom: .5rem;
+    margin-top: 2.5rem;
+}
+
+hr{
+    height:.1rem;
+    border-width:0;
+    color:gray;
+    background-color:var(--grey);
+}
+.enrol-btn{
+   margin-left:10rem!important;
+   border-radius: 0rem!important;
+   font-size: 1.3rem; 
+}
+.viewDetails-btn{
+    border-radius: 0rem!important;
+    font-size: 1.3rem;
+}
+.card-Section{
+    margin-left: 2rem;
+    margin-top: 4rem;
+    margin-right: 0rem;
+}
+p {
+    margin: 0 0 5px!important;
+    font-size: 1.2rem;
+}
+.single-card{
+    padding: 1rem; 
+}
+/* cards */
+/* Table */
+.ui-grid-header-cell {
+    background: var(--grey)!important;
+    border-color: var(--white);
+}
+.ui-grid-cell-contents {
+    color: black!important;
+}
+.modalDetails{
+    width: 650px;
+    height: 350px;
+}
+.grid-details{
+    width: 600px;
+    height: 125px;
+}
+#modalLabel{
+    margin-bottom: 1rem;
+}
+/* Table */
+
+/* Filters */
+.category-filter,.trainer-filter{
+    height: 3rem;
+    float: right;
+    margin-right: 2.5rem;
+}
+/* Filters */
+
+/* Responsive */
+@media only screen and (max-width: 992px) and (min-width: 856px)  {
+    .image-slide{     
+        visibility: hidden;
+    }
+    .slider-background{
+        height: 35vh;
+    }
+    .sliderHeading{
+        font-size: 2.5rem!important;
+        font-weight: bold;
+    }
+    .sliderHeading2{
+        font-size: 1.8rem!important;
+        font-weight: small;
+    }
+    .carousel-height{
+        height: 35vh;
+    }   
+    #slider-caption{
+        margin: 0px 0px -2rem -4rem!important;
+        width:100%;
+    }
+    .card-image{
+        width: 100%;
+        height: 15rem;
+    }
+    .cards{
+        margin-left: 8rem;
+        width: 32rem!important;
+        display: inline-block;
+    }
+    .card-Section{
+        margin-left:0rem;
+    }
+    .single-card{
+        padding: 1rem; 
+    }
+    .enrol-btn{
+        margin-left:9rem!important;
+       
+    }
+}
+@media only screen and (max-width: 855px) and (min-width: 622px)  {
+    .image-slide{     
+        visibility: hidden;
+    }
+    .slider-background{
+        height: 35vh;
+    }
+    .sliderHeading{
+        font-size: 2rem!important;
+        font-weight: bold;
+    }
+    .sliderHeading2{
+        font-size: 1.5rem!important;
+        font-weight: small;
+    }
+    .carousel-height{
+        height: 35vh;
+    }    
+    #slider-caption{
+        margin:0px 0px -4rem -6rem!important;
+        width:100%;
+    }
+    .card-image{
+        width: 100%;
+        height: 12rem;
+    }
+    .cards{
+        width: 28rem;
+        margin: 3.5rem;
+    }
+    .card-Section{
+        margin-left:0rem;
+    }
+    .single-card{
+        padding: 1rem; 
+    }
+    .enrol-btn{
+        margin-left:9rem!important; 
+    }
+    .nav-option{
+        display: block;
+    } 
+}
+
+@media only screen and (max-width: 620px) {
+    .image-slide{     
+        visibility: hidden;
+    }
+    .slider-background{
+        height: 28vh;
+    }
+    .sliderHeading{
+        font-size: 1.9rem!important;
+        font-weight: bold;
+    }
+    .sliderHeading2{
+        font-size: 1.4rem!important;
+        font-weight: small;
+    }
+    .carousel-height{
+        height: 28vh;
+    }
+    #slider-caption{
+        margin: 0rem 0rem -10rem -4rem!important;
+        width:100%;
+        overflow: hidden;
+    }
+    .nav-option{
+        padding-top: 0rem!important;
+        padding-left: 26rem!important;
+        margin-top: 0rem!important;
+        transform: translate(-1rem, -5rem);
+        margin-right: 0rem!important;
+    }  
+    .card-image{
+        width: 100%;
+        height: 12rem;
+    }  
+    .cards{
+        margin: 0 auto!important;
+        width: 30rem;
+        margin-bottom: 2rem!important;
+    }
+    .card-Section{  
+        margin-left: .4rem;
+        margin-right: 0rem;
+        margin-top: 7rem;
+    }
+    .single-card{
+        padding: 1rem;  
+    } 
+    .enrol-btn{
+        margin-left:12rem!important;   
+    }
+    .modalDetails{
+        width: 340px;
+        height: 620px;
+    }
+    .grid-details{
+        width: 310px;
+        height: 300px;
+    } 
+}
+/* Responsive */
+
